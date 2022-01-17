@@ -48,3 +48,10 @@ ebay:
 5. Select I Agree
 
 - #### You should now see the sensors within Home Assistant.
+
+
+##### Marketplace Account Deletion Warning
+I don't actually know whether or not you should be marking the exempted from marketplace account deletion (Mentioned in step 6). The only data we are saving is your own auth token the numbers saved within the sensors. We aren't saving any buyer data and if you delete your own ebay account you should understand that you would also need to then delete the integration. 
+
+
+I believe it is possible to set up home assistant to deal with the marketplace account deletion notifications. However eBay sends the notification for every single account that is deleted, which would lead to unnecessary calls to your HA server. I haven't counted but it most likely wouldn't be an obsurd number that would bug down the server too much. But it is something to think about. I actually run another website that uses the integration and handles the marketplace account deletion so I have never marked the being exempt from marketplace account deletion. If you get any notices from eBay saying you are non-compliant because you incorrectly stated you didn't save user data please put in an issue and I'll see if this is worth putting in the integration. Alternatively if anyone wants to add this and create a pull request for it that would be apprecated as well.

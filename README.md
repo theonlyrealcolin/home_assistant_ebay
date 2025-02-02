@@ -9,11 +9,20 @@
 * Funds on Hold
 * Funds Processing
 
-### Setup
+### Manual Setup
 
-- #### Add this integration to to your config/custom_components folder and restart your Home Assistant
+* Download this repository as a ZIP (green button, top right) and unzip the archive
+* Copy `/custom_components/eBay` to your `<config_dir>/custom_components/` directory
+* Restart HA
 
-- #### Follow the steps below to setup an eBay developer account.
+### HACS Setup
+* Go into HACS
+* 3 Dots -> Custom Repositories
+* Add Custom Repository URL: https://github.com/theonlyrealcolin/home_assistant_ebay
+* Type: Integration
+* Restart HA
+
+- #### Follow the steps below to setup an eBay developer account. This could become out of date so you'll just have to follow the steps with ebay to create your developer credentials. 
 1. Sign up for eBay developer account at [https://developer.ebay.com/signin](https://developer.ebay.com/signin)
 2. Create a keyset. [Application Access Keys](https://developer.ebay.com/my/keys)
 3. Save the Production App ID (Client ID) for later.

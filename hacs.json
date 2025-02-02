@@ -1,0 +1,7 @@
+{
+    "name": "eBay",
+    "domains": [
+        "sensor"
+    ],
+    "iot_class": "Cloud Polling"
+}
